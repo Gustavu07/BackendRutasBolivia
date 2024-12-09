@@ -21,7 +21,7 @@ app.use(cors(corsOptions));
 
 const db = require("./models");
 db.sequelize.sync({
-     force: true // drop tables and recreate
+    // force: true // drop tables and recreate
 }).then(() => {
     console.log("db resync");
 });

@@ -20,6 +20,7 @@ db.usuario = require("./usuario.model.js")(sequelize, Sequelize);
 db.ruta = require("./ruta.model.js")(sequelize, Sequelize);
 db.incidente = require("./Incidentes.model.js")(sequelize, Sequelize);
 db.municipality = require("./municipios.model.js")(sequelize, Sequelize);
+db.solicitudIncidentes=require("./solicitudIncidente.js")(sequelize,Sequelize);
 
 
 db.usuario.hasMany(db.ruta, { foreignKey: 'updatedBy', as: 'updatedRoutes' });
